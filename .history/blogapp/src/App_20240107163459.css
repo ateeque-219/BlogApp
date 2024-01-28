@@ -1,0 +1,12 @@
+body{
+  
+}
+main{
+  padding: 12px;
+  max-width: 550px;
+  margin:0 auto ;
+}
+header{
+ display: flex;
+ justify-content: space-around;
+}

@@ -1,0 +1,43 @@
+body{
+  color: #353535;
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 12px;
+  max-width: 900px;
+  margin:0 auto ;
+  border: 1px solid black;
+}
+header{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 50px;
+ align-items: center;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo{
+  font-weight: bolder;
+  font-size: 30px;
+}
+header nav{
+  display: flex;
+  gap: 18px;
+}
+div.post{
+  display: flex;
+  gap: 22px;
+  /* justify-content: center; 
+   align-items: center; */
+   margin-bottom: 44px;
+}
+div.text{
+  margin-top: 0px;
+}
+
+
+

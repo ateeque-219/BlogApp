@@ -1,0 +1,27 @@
+body{
+  color: #353535;
+}
+img{
+  
+}
+main{
+  padding: 12px;
+  max-width: 550px;
+  margin:0 auto ;
+}
+header{
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 50px;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo{
+  font-weight: bolder;
+}
+header nav{
+  display: flex;
+  gap: 18px;
+}

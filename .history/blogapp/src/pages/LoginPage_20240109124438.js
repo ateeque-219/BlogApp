@@ -1,0 +1,13 @@
+import React from 'react'
+
+const LoginPage = () => {
+  return (
+    <form ClassName="">
+    <input type="text" placeholder='username'/>
+    <input type="password" placeholder='username'/>
+     <button>Login</button>
+    </form>
+  );
+}
+
+export default LoginPage

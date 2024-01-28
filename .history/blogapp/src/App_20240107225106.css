@@ -1,0 +1,63 @@
+body{
+  color: #353535;
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 12px;
+  max-width: 900px;
+  margin:0 auto ;
+  border: 1px solid black;
+}
+header{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 50px;
+ align-items: center;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo{
+  font-weight: bolder;
+  font-size: 30px;
+}
+header nav{
+  display: flex;
+  gap: 18px;
+}
+div.post{
+  display: flex;
+  gap: 22px;
+   margin-bottom: 44px;
+}
+div.texts{
+  margin: 0;
+  padding: 0;
+}
+
+.texts h2 {
+  margin: 0;
+}
+
+.image {
+  margin-top: 18px;
+  width: 600px;
+}
+div.post p.info{
+  margin:5px 0;
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+  color: #888;
+  font-size: 1rem;
+
+}
+div.post p.info a.author{
+  color: ;
+}
+
+
+

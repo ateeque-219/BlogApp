@@ -1,0 +1,37 @@
+body{
+  color: #353535;
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 12px;
+  max-width: 550px;
+  margin:0 auto ;
+}
+header{
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 50px;
+ align-items: center;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo{
+  font-weight: bolder;
+}
+header nav{
+  display: flex;
+  gap: 18px;
+}
+div.post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+div.post div.img{
+  width: 40%;
+}
