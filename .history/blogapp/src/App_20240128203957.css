@@ -68,6 +68,7 @@ header nav{
 .parent-front{
   display: flex;
   justify-content: center;
+
 }
 .post{
   display: flex;
