@@ -21,6 +21,7 @@ main{
 } 
 
 header{
+  position: sticky;
   display:flex;
   justify-content:space-between;
   margin-bottom: 50px;
@@ -41,10 +42,6 @@ header a{
   text-decoration:none;
   color: inherit;
 
-}
-div.createform{
-  margin:60px;
-  padding: 40px;
 }
 header a.logo{
   font-weight: bold;
@@ -207,9 +204,7 @@ div.post-page a.edit-btn{
 a svg{
   height:20px;
 }
-form{
-  margin: 0 50px;
-}
+
 .loginn {
   display: flex;
   align-items: center;
@@ -222,7 +217,4 @@ form{
   color: black;
   cursor: pointer;
 }
-.post:hover{
-  background-color:#e0e1eb;
-  transform: translateY(-5px);
-}
+.front

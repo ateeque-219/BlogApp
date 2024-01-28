@@ -44,7 +44,7 @@ header a{
 }
 div.createform{
   margin:60px;
-  padding: 40px;
+  padding: ;
 }
 header a.logo{
   font-weight: bold;
@@ -207,9 +207,7 @@ div.post-page a.edit-btn{
 a svg{
   height:20px;
 }
-form{
-  margin: 0 50px;
-}
+
 .loginn {
   display: flex;
   align-items: center;
