@@ -150,7 +150,6 @@ div.post div.image{
   /* max-height:300px; */
   display: flex;
   overflow:hidden;
-padding: 20px;
 }
 div.post div.image img{
    height: 301px;

@@ -150,6 +150,8 @@ div.post div.image{
   /* max-height:300px; */
   display: flex;
   overflow:hidden;
+  aspect-ratio: 8/7;
+object-fit: contain;
 padding: 20px;
 }
 div.post div.image img{
