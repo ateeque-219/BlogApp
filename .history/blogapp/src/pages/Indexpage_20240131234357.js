@@ -17,7 +17,7 @@
       {
         posts.length > 0 ? (posts.map(post=>(
           <Post {...post}/>
-        ))) : <h1>Loading!!!</h1>
+        ))) : <h1>Loading</h1>
       }
      </div>
      </div>

@@ -184,6 +184,7 @@ app.get('/post/:id', async (req, res) => {
 
  app.delete('/delete-post/:id', async (req, res) => {
   const postId = req.params.id;
+
   try {
     const result = await Post.findByIdAndDelete(postId);
 

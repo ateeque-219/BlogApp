@@ -37,6 +37,7 @@ export default function PostPage() {
             .then(response => response.json())
             .then(data => {
               console.log(data);
+              alert("Post deleted successfully")
               setDel(true);
             //   return 
             })

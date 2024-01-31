@@ -38,7 +38,7 @@ export default function PostPage() {
             .then(data => {
               console.log(data);
               setDel(true);
-            //   return 
+            //   return <Navigate to={'/'} />
             })
             .catch(error => {
               console.error('Error deleting post:', error);
@@ -47,7 +47,7 @@ export default function PostPage() {
       };
       
     if(del){
-       return <Navigate to={'/'} />
+        return 
     }
     return (
         <div className="post-page">

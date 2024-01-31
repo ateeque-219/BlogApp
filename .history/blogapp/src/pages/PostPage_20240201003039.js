@@ -47,7 +47,7 @@ export default function PostPage() {
       };
       
     if(del){
-       return <Navigate to={'/'} />
+        
     }
     return (
         <div className="post-page">

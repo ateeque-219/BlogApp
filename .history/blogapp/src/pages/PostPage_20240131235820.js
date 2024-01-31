@@ -5,11 +5,9 @@ import { formatISO9075 } from "date-fns";
 import { UserContext } from "../UserContext";
 import { Link } from 'react-router-dom';
 import { MdAutoDelete } from "react-icons/md";
-import {Navigate} from "react-router-dom";
 
 export default function PostPage() {
     const [postInfo, setPostInfo] = useState(null);
-    const [del , setDel] = useState(false);
     const { userinfo } = useContext(UserContext);
     const { id } = useParams();
     console.log(id);
@@ -29,26 +27,6 @@ export default function PostPage() {
 
     if (!postInfo) return '';
 
-    const handleDelete = (postId) => {
-        if (window.confirm("Are you sure you want to delete this post?")) {
-          fetch(`http://localhost:4000/delete-post/${postId}`, {
-            method: 'DELETE',
-          })
-            .then(response => response.json())
-            .then(data => {
-              console.log(data);
-              setDel(true);
-            //   return 
-            })
-            .catch(error => {
-              console.error('Error deleting post:', error);
-            });
-        }
-      };
-      
-    if(del){
-       return <Navigate to={'/'} />
-    }
     return (
         <div className="post-page">
             <h1>{postInfo.title}</h1>
@@ -64,7 +42,7 @@ export default function PostPage() {
                         </svg>
                         Edit this post
                     </Link>
-                    <Link className="edit-btn" onClick={() => handleDelete(postInfo._id)}>
+                    <Link className="edit-btn" onClick={} >
                     <MdAutoDelete />
                         Delete   post
                     </Link>

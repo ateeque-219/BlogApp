@@ -5,11 +5,9 @@ import { formatISO9075 } from "date-fns";
 import { UserContext } from "../UserContext";
 import { Link } from 'react-router-dom';
 import { MdAutoDelete } from "react-icons/md";
-import {Navigate} from "react-router-dom";
 
 export default function PostPage() {
     const [postInfo, setPostInfo] = useState(null);
-    const [del , setDel] = useState(false);
     const { userinfo } = useContext(UserContext);
     const { id } = useParams();
     console.log(id);
@@ -37,8 +35,7 @@ export default function PostPage() {
             .then(response => response.json())
             .then(data => {
               console.log(data);
-              setDel(true);
-            //   return 
+              return <Navigate to={'/'} />
             })
             .catch(error => {
               console.error('Error deleting post:', error);
@@ -46,9 +43,7 @@ export default function PostPage() {
         }
       };
       
-    if(del){
-       return <Navigate to={'/'} />
-    }
+
     return (
         <div className="post-page">
             <h1>{postInfo.title}</h1>
